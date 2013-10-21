@@ -11,7 +11,7 @@ Currently this package requires PHP 5.1.2 or greater which provides the hash() f
 
 openssl is also required with your PHP installation to compute and verify RSA signatures.
 
-How to Use
-<in progress>
+Quick Script Description
+
 
 <b>Changelog</b>
