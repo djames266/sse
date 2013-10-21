@@ -8,6 +8,9 @@
 *  to address, from address, subject and message (and headers if present).
 *  After the inputs pass a security check (sanitisation), p_mail() adds the signatures to the original message body
 *  p_mail() can handle sending multipart content emails (html and text)
+*  Important Notes:
+*  Create an array of header inputs e.g. $m_array = array("to" => $_POST['to'],"subject" => $_POST['subject'], "message" => $_POST['message'], "from" => $_POST['from'], "headers" => "")
+*  Replace PHP's mail() function with p_mail() and use $m_array as the input to p_mail that is, p_mail($m_array).
 ***************************************************************************/
 require_once('psendverifyCF.php'); //functions common to sending and verifying mail
 
