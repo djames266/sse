@@ -1,0 +1,36 @@
+<html>
+<body>
+<font color="black" face="arial">
+<h3>Email Verifier:</h3>
+
+<b>How does it work?</b>
+<p>The verifier tool is based on Secure/Multipurpose Internet Mail Extensions (S/MIME) technology (mainly digital signatures).<br>Before you
+receive an email message from the website, digital signing is performed on the email which results in the <br> codes you see at the bottom of
+your received message separated by ---+++++++---. These codes capture the original <br> data as intended by the sender. When you copy the 
+received message into the message field, the verifier decodes <br> the received digital signatures and compares it to the received message data.
+If they match, it means the data received <br> matches the original data sent and can be trusted (verifier results in a pass). Otherwise,
+the data has been altered during <br> transit and should not be trusted (verifier results in a fail). </p>
+<b>Application (a simple defense against phishing)</b>
+<p>Phishing is the fraudulent practice of sending emails claiming to be from a genuine organisation. These emails are <br> designed to steal personal identity and information. Say this website sends you an email asking you to update personal <br> information. If you were unsure about this email, you could use this tool
+to verify if it was truly sent by the website.</p>
+<b>How do I use it?</b>
+<p>Simply copy the <b>whole email message</b> received, paste it in the message field and click check. <br> You can also verify the optional header fields (To, From and Subject). Make sure to first delete the present text in the below fields.</p>
+
+<form action="p_verify.php" method="post">
+<table>
+<tr><td align="right">From:</td><td><input name="from" type="text" style="width: 400px;" value="Sender's email address"/></td></tr>
+<tr><td align="right">To:</td><td><input name="to" type="text" style="width: 400px;" value="Recipient's (your) email address"/></td></tr>
+<tr><td align="right">Subject:</td><td><input name="subject" type="text" style="width: 400px;" value="Subject line of email"/></td></tr>
+</table>
+Message:<br>
+<textarea name="message" cols="100" rows="20">
+Paste the whole email message body here and click check (DELETE THIS LINE FIRST)
+</textarea><br>
+<input type="submit" value="Check" style="width: 100px; height: 50px;" />
+</form>
+
+</font>
+
+</body>
+
+</html>
