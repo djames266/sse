@@ -11,7 +11,7 @@ Currently this package requires PHP 5.1.2 or greater which provides the hash() f
 
 openssl is also required with your PHP installation to compute and verify RSA signatures.
 
-<b>Quick Script Description<b>
+<b>Quick Script Description</b>
 define_database.txt: defines the table and column details used by SSE
 key-cfg.php: key-pair configuration file used by SSE (p_mailF.php and p_verifyF.php)
 p_init.php: initialises global variables used by SSE
